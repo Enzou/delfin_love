@@ -354,7 +354,7 @@ body{font-family:'Baloo 2',cursive;background:var(--cream);overflow-x:hidden}
   <div class="arena" id="arena" style="cursor:none">
     <div class="overlay show" id="overlay">
       <div class="big" id="overlayBig">🐬</div>
-      <div id="overlayMsg" style="line-height:2">Mové el delfín y<br>¡atrapá 15 corazones!</div>
+      <div id="overlayMsg" style="line-height:2">Mové el delfín y<br>¡atrapá 10 corazones!</div>
       <button class="btn" onclick="startGame()" id="overlayBtn">▶ JUGAR</button>
     </div>
   </div>
@@ -497,7 +497,7 @@ function winGame() {
   cancelAnimationFrame(rafId);
   heartObjs.forEach(h => h.el.remove());
   heartObjs = [];
-  overlayBig.textContent = '🎉';
+  overlayBig.textContent = '🐄';
   overlayMsg.innerHTML = '¡GANASTE!<br><span style="color:var(--pink);font-size:.8em">¡Atrapaste todos mis corazones!<br>Como lo hacés en la vida real 💕</span>';
   overlayBtn.style.display = 'none';
   overlay.classList.add('show');
