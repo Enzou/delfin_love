@@ -349,7 +349,7 @@ body{font-family:'Baloo 2',cursive;background:var(--cream);overflow-x:hidden}
   <div class="game-title">🎮 MINI DESAFÍO 🎮</div>
   <div class="game-sub">¡Mové el delfín con el mouse (o flechas ←→) y atrapa los corazones!</div>
 
-  <div class="score-bar">Corazones atrapados: <span id="score">0</span> / 15</div>
+  <div class="score-bar">Corazones atrapados: <span id="score">0</span> / 10</div>
 
   <div class="arena" id="arena" style="cursor:none">
     <div class="overlay show" id="overlay">
@@ -407,7 +407,7 @@ const overlayMsg = document.getElementById('overlayMsg');
 const overlayBtn = document.getElementById('overlayBtn');
 const restartWrap = document.getElementById('restartWrap');
 
-const TARGET = 15;
+const TARGET = 10;
 const HEARTS = ['💕','❤️','🩷','💗','💖','💝','🫶'];
 
 let score = 0, active = false, rafId, spawnTimer;
